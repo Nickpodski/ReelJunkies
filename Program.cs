@@ -22,10 +22,12 @@ settings.ServerApi = new ServerApi(ServerApiVersion.V1);
 
 var client = new MongoClient(settings);
 
-try {
+try 
+{
     var result = client.GetDatabase("admin").RunCommand<BsonDocument>(new BsonDocument("ping", 1));
     Console.WriteLine("Pinged your deployment. You successfully connected to MongoDB!");
-} catch (Exception ex) { Console.WriteLine(ex);}
+}
+catch (Exception ex) { Console.WriteLine(ex);}
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
