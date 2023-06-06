@@ -14,7 +14,7 @@ builder.Configuration.AddEnvironmentVariables()
 
 var app = builder.Build();
 
-var connectionURI = builder.Configuration.GetConnectionString("mongoConectionString");
+var connectionURI = builder.Configuration.GetConnectionString("mongoConnectionString");
 
 var settings = MongoClientSettings.FromConnectionString(connectionURI);
 
