@@ -3,10 +3,12 @@
     <TargetFramework>net7.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>9df685ed-45e9-426d-8ac0-1d310e153b8d</UserSecretsId>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.2"/>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0"/>
     <PackageReference Include="MongoDB.Driver" Version="2.19.2"/>
+    <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="7.0.0"/>
   </ItemGroup>
 </Project>
